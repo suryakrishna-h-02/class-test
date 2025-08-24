@@ -1,84 +1,189 @@
 * {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
-    width: 100%;
+    padding: 20px 200px 20px 200px;
     background-color: white;
     display: flex;
     justify-content: space-between;
 
+
 }
 
-.section1 {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.section1-tabs img {
-    height: 300px;
-}
-
-.section2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.selection2-tabs img {
-    height: 300px;
-}
-
-h2 {
-    font-weight: bold;
-}
-
-h3 {
-    font-weight: lighter;
-}
-h4{
-    font-weight: lighter;
-}
-
-.numbers{
-    margin-top: 100px;
-    display: flex;
-}
-.about img{
-    margin-top: 50px;
-    position: relative;
-    left: 300px;
-}
-hr{
-    margin-top: 100px;
-    width: 1500px;
-    position: relative;
-    left: 20px;
-    opacity: 0.6;
-}
-
-#tab1 img{
-    height: 50px;
-}
-#tab2 img{
-    height: 50px;
-}
-
-footer{
-    display: flex;
-    gap: 50px;
-}
-.blog-tabs{
-    margin-right: 200px;
-    position: relative;
-    right: 100px;
-}
-.small-content{
-    position: relative;
-    top: -80px;
-    left: 20px;
-}
-.small-content h4{
+.navigator {
+    position: fixed;
     width: 100%;
+    top: 0;
+}
+
+.container {
+    margin: 100px 330px 0px 330px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 0px;
+
+}
+
+.container div {
+    height: 600px;
+    width: 300px;
+    gap: 10px;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container h2 {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.container p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.numbers {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.num {
+    padding-right: 5px;
+    color: white;
+}
+
+.num:hover a {
+    background-color: black;
+    color: white;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    margin: 100px 330px 0px 330px;
+    opacity: 0.2;
+}
+
+.about {
+    margin: 100px 330px 0px 330px;
+}
+
+.about h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about img {
+    margin: 50px 330px 0px 330px;
+    height: 400px;
+    text-align: center;
+}
+
+.about h2 {
+    margin: 10px 330px 0px 330px;
+    font-size: 20px;
+}
+
+.about h3 {
+    margin: 10px 330px 0px 330px;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.about p {
+    margin: 10px 100px 0px 100px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer-container {
+    margin: 100px 330px 0px 330px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer-container div {
+    height: 200px;
+    width: 400px;
+}
+
+.footer-container h2 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.footer-container p {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+#footer-content a {
+    color: black;
+}
+
+#footer-content a:visited {
+    color: black;
+}
+
+.small-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.small-grid div {
+    height: 80px;
+    width: 400px;
+}
+
+.small-grid img {
+    height: 60px;
+}
+
+.small-grid h6 {
+    position: relative;
+    left: 80px;
+    top: -50px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.small-grid p {
+    position: relative;
+    left: 80px;
+    top: -55px;
+}
+
+.small-grid img{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#lorem:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#ipsum:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.tags-footer{
+    margin-top: 20px;
+}
+.tags-footer-1 span{
+    margin: 10px 5px 10px 0px;
+    background-color: rgb(64, 62, 62);
+    color: white;
+    padding: 3px;
+    font-size: 10px;
 }
